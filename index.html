@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obsession Pizza — MCO Flight Board</title>
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div id="app">
+
+  <header id="header">
+    <div class="header-brand">
+      <div class="brand-icon">🍕</div>
+      <div>
+        <div class="brand-name">Obsession Pizza</div>
+        <div class="brand-sub">Orlando International Airport · MCO</div>
+      </div>
+    </div>
+    <div class="header-meta">
+      <div id="clock">--:--</div>
+      <div id="date-display">--</div>
+    </div>
+  </header>
+
+  <main id="board">
+
+    <section class="panel">
+      <div class="panel-header">
+        <span class="panel-arrow">↓</span>
+        <span class="panel-title">Arrivals</span>
+        <span class="panel-airport">MCO</span>
+      </div>
+      <div class="col-labels">
+        <span>Flight</span>
+        <span>Origin</span>
+        <span>Time</span>
+        <span class="right">Status</span>
+      </div>
+      <div class="flights-list" id="arrivals-list"></div>
+    </section>
+
+    <section class="panel">
+      <div class="panel-header">
+        <span class="panel-arrow">↑</span>
+        <span class="panel-title">Departures</span>
+        <span class="panel-airport">MCO</span>
+      </div>
+      <div class="col-labels">
+        <span>Flight</span>
+        <span>Destination</span>
+        <span>Time</span>
+        <span class="right">Status</span>
+      </div>
+      <div class="flights-list" id="departures-list"></div>
+    </section>
+
+  </main>
+
+  <div id="ticker-wrap">
+    <div id="ticker-tape">✈ WELCOME TO OBSESSION PIZZA · ORLANDO INTERNATIONAL AIRPORT · MCO · ENJOY YOUR MEAL · HAVE A GREAT FLIGHT ·</div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-cell">
+      <span class="footer-icon">📸</span>
+      <div>
+        <div class="footer-label">Follow Us</div>
+        <div class="footer-value" id="ig-value">--</div>
+        <div class="footer-sub">@OBSESSIONPIZZAMCO</div>
+      </div>
+    </div>
+    <div class="footer-cell">
+      <span class="footer-icon">🌤️</span>
+      <div>
+        <div class="footer-label">Orlando Weather</div>
+        <div class="footer-value" id="weather-value">--°F</div>
+        <div class="footer-sub" id="weather-sub">FETCHING...</div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="data-source"></div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
